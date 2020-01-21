@@ -99,5 +99,6 @@ class MusicLibraryController
     if input == songs_sorted_by_name.index(1)
     puts "Playing #{song.name} by #{song.artist}"
   end 
+  end 
   
 end 
