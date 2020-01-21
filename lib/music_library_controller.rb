@@ -40,7 +40,7 @@ class MusicLibraryController
   end 
   
   def list_songs
-    songs_sorted_by_name = Song.all.sort_by do |song|
+    songs_sorted_by_name = Song.all.sort_by! do |song|
       song.name 
     end 
   binding.pry 
