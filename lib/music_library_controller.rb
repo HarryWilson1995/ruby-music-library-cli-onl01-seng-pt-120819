@@ -38,8 +38,9 @@ class MusicLibraryController
   end 
   
   def list_songs
-    # .sort_by? name 
-    Song.all.sort_by {|song| song.name}
+    all_songs = Song.all.sort_by {|song| song.name}
+    all_songs.each do |song|
+      puts ""
      
   end 
   
