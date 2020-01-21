@@ -95,7 +95,9 @@ class MusicLibraryController
   
   def play_song
     puts "Which song number would you like to play?"
-    input = gets.chomp
+    input = gets.to_i
+    if input == songs_sorted_by_name.index(1)
+    puts "Playing #{song.name} by #{song.artist}"
   end 
   
 end 
