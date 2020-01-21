@@ -90,7 +90,8 @@ class MusicLibraryController
       end 
       songs_sorted_by_genre.each.with_index(1) do |song, index|
         puts "#{index}. #{song.name} - #{song.artist.name}"
-    end 
+      end 
+    end
   end 
   
   def play_song
