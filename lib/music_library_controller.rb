@@ -39,6 +39,7 @@ class MusicLibraryController
   
   def list_songs
     # .sort_by? name 
+    Song.all.
      
   end 
   
